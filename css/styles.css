@@ -31,6 +31,7 @@ body {
   color: var(--accent-color);
   font-family: "Raleway";
   font-style: normal;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -40,7 +41,7 @@ body {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 .nav-link.current {
   color: var(--accent-color);
@@ -82,7 +83,7 @@ body {
   color: var(--title-text-color);
 }
 .button.order:hover {
-  background: #f5f4fa;
+  background: var(--primary-bgc-color);
 }
 
 /* Герой */
@@ -127,14 +128,12 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 .about .title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
 }
 .about .text {
   color: var(--primary-text-color);
@@ -169,10 +168,6 @@ ul {
 /* Футер */
 
 .footer {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
   background: #2f303a;
 }
 .footer-logo {
@@ -191,6 +186,7 @@ ul {
 .footer-link {
   font-style: normal;
   line-height: 1.71;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -213,7 +209,6 @@ ul {
 /* portfolio.html */
 
 .progect-name {
-  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
@@ -223,6 +218,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   font-size: 16px;
+  color: var(--primary-text-color);
 }
 
 .cards li {
