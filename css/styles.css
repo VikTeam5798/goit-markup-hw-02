@@ -64,7 +64,7 @@ body {
   color: var(--title-text-color);
   cursor: pointer;
   background: #f5f4fa;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.88;
   display: flex;
   align-items: center;
@@ -80,10 +80,11 @@ body {
 
 .button.order {
   background-color: var(--accent-color);
-  color: var(--title-text-color);
+  color: #fff;
 }
 .button.order:hover {
   background: var(--primary-bgc-color);
+  color: var(--title-text-color);
 }
 
 /* Герой */
@@ -131,6 +132,7 @@ ul {
 }
 .about .title {
   font-size: 14px;
+  font-weight: 900;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -210,6 +212,7 @@ ul {
 
 .progect-name {
   line-height: 2;
+  font-size: 18px;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
