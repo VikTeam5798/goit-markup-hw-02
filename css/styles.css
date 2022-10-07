@@ -1,4 +1,4 @@
-/* index.html */
+/* ----------------------index.html---------------------- */
 
 :root {
   --primary-text-color: #757575;
@@ -21,11 +21,60 @@ body {
 .link {
   text-decoration: none;
 }
+.page-header {
+  width: 1200px;
+  margin: 0 auto;
 
-/* Шапка сайта */
+  /* outline: 2px solid tomato; */
+}
+
+.container.hero {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 15px;
+  text-align: center;
+
+  /* outline: 2px solid tomato; */
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 94px 15px;
+
+  /* outline: 2px solid tomato; */
+}
+
+.page-footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  /* outline: 2px solid tomato; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* ----------------------Шапка сайта---------------------- */
 
 .header {
   background: var(--primary-bgc-color);
+  display: block;
 }
 .header-logo {
   color: var(--accent-color);
@@ -61,17 +110,19 @@ body {
   color: var(--accent-color);
 }
 .button {
+  border-radius: 4px;
   color: var(--title-text-color);
   cursor: pointer;
   background: #f5f4fa;
   font-weight: 500;
   line-height: 1.88;
+  padding: 6px 22px;
+  min-width: 73px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .button:hover {
   background-color: var(--accent-color);
@@ -79,15 +130,28 @@ body {
 }
 
 .button.order {
+  display: inline-block;
   background-color: var(--accent-color);
   color: #fff;
+  margin-right: auto;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
 }
 .button.order:hover {
   background: var(--primary-bgc-color);
   color: var(--title-text-color);
 }
+.buttons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 34px;
+}
 
-/* Герой */
+/* ----------------------Герой---------------------- */
 
 .visually-hidden {
   position: absolute;
@@ -105,6 +169,7 @@ body {
 
 .hero {
   background: #2f303a;
+  text-align: center;
 }
 .hero.secondary {
   background: #f5f5f5;
@@ -114,21 +179,26 @@ body {
   font-weight: 900;
   line-height: 1.36;
   font-size: 44px;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--primary-bgc-color);
 }
 ul {
   list-style: none;
 }
 
-/* Cекції */
+/* ----------------------Cекції---------------------- */
 
 .section-title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.about {
+  padding: 94px 0;
 }
 .about .title {
   font-size: 14px;
@@ -137,12 +207,17 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.title {
+  margin-bottom: 10px;
+}
 .about .text {
   color: var(--primary-text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
+.team {
+  padding: 94px 0;
+}
 .team .name {
   font-weight: 500;
   line-height: 1.18;
@@ -167,10 +242,11 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* Футер */
+/* ----------------------Футер---------------------- */
 
 .footer {
   background: #2f303a;
+  display: block;
 }
 .footer-logo {
   color: var(--accent-color);
@@ -180,6 +256,8 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  display: block;
 }
 .footer-logo:hover,
 .footer-logo:focus {
@@ -207,7 +285,7 @@ ul {
   color: var(--primary-bgc-color);
 }
 
-/* portfolio.html */
+/* ----------------------portfolio.html---------------------- */
 
 .progect-name {
   line-height: 2;
@@ -226,4 +304,8 @@ ul {
 .cards li {
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
 }
